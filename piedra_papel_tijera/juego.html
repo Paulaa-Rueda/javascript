@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="styleSheet" href="juego.css">
+    <title>Juego</title>
+</head>
+<body>
+    <header class = "header" >
+        <h1 class = "header__titulo">Piedra, Papel y Tijera</h1>
+        <h3 class = "header__leyenda">Reta la CPU en el juego más popular y compartelo con tus amigos</h3>
+    </header>
+    <p>Tu nombre <input type="text" id="user"></p>
+    <p><input type="button" id="enviar" value="Enviar" onclick="establecerJugador()"></p>
+
+    <div align="center" class="body__img">
+        <img src="papel.png" alt="papel" onclick="jugar('papel')"/>
+        <img src="piedra.png" alt="piedra" onclick="jugar('piedra')"/>
+        <img src="tijera.png" alt="tijera" onclick="jugar('tijera')"/>
+    </div>
+
+    <main class="main_container">
+
+        <div class="main_container__card">
+            <div class="main_container__card--title">
+                <img id="usuario" src="./user.png" alt="IconUser">
+                <p>Usuario</p>
+                <p id="puntos_usuario">0</p>
+            </div>
+
+            <div class="main_container__card--title">
+                <img id="cpu" src="./cpu.png" alt="IconCpu">
+                <p>CPU</p>
+                <p id="puntos_cpu">0</p>
+            </div>
+        </div>    
+    <script src="juego.js"></script>
+    
+</body>
+</html>

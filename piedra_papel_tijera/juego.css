@@ -1,0 +1,28 @@
+body{
+    margin-right: 10px;
+    background-image: url("/home/pauli/personalProyects/proyectosGitHub/JavaScript/piedra_papel_tijera/fondo1.png");
+    font-family: 'Crimson Pro', serif;
+}
+.header{
+    text-align: center;
+}
+.header__titulo{
+    font-size: 50px;
+    color: darkblue;
+}
+
+body p {
+    text-align: center;
+}
+
+.body__img img {
+    border: 2px;
+    border-color: black;
+}
+
+.main_container__card--title img{
+    display: block;
+    margin: auto;
+}
+
+    
